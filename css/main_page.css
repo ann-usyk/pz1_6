@@ -20,10 +20,7 @@ body {
     text-align: center;
 }
 
-.nav_header {
-    text-align: ;
-
-}
+.nav_header {}
 
 .fitness_icon {
     display: flex;
@@ -47,11 +44,17 @@ h1 {
     justify-content: center;
     width: 60%;
     justify-content: space-around;
+    font-size: 24px;
 }
 
 a {
     color: white;
+    text-decoration: none;
 
+}
+
+a:hover {
+    color: black;
 }
 
 .button_login {
@@ -62,6 +65,7 @@ a {
     font-size: 24px;
     border-color: white;
     border-width: 4px;
+    border-radius: 5px;
 }
 
 .combo-button {
@@ -72,7 +76,7 @@ a {
 
 .combo-button:first-child {
     margin-right: 10px;
-   
+
 }
 
 
@@ -80,10 +84,12 @@ a {
     display: flex;
     flex-direction: row;
 }
+
 .left-menu-pannel {
     width: 15%;
     padding-right: 10px;
 }
+
 .main {
     width: 70%;
     display: flex;
@@ -98,17 +104,21 @@ a {
     margin: 10px;
     margin-top: 20px;
 }
-.short-about{
+
+.short-about {
     text-align: justify;
     padding: 10px;
     margin: 0px;
     font-size: 18px;
+    line-height: 30px;
 }
-.main-img{
+
+.main-img {
     align-self: center;
-    width:100%;
+    width: 100%;
     padding: 10px;
 }
+
 .right-side {
     width: 15%;
     padding-left: 10px;
