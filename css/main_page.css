@@ -22,7 +22,6 @@ body {
     text-align: center;
 }
 
-.nav-header {}
 
 .fitness-icon {
     display: flex;
@@ -41,7 +40,7 @@ h1 {
     color: white;
 }
 
-.nav_header {
+.nav-header {
     display: flex;
     justify-content: center;
     width: 60%;
@@ -81,6 +80,11 @@ a:hover {
 
 }
 
+/*main*/
+
+.burger-icon {
+    height: 0px;
+}
 
 .basis-elements {
     display: flex;
@@ -130,8 +134,14 @@ a:hover {
     padding-left: 10px;
 }
 
+/*footer*/
+
 footer {
     text-align: center;
+}
+
+input#burger {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -176,7 +186,6 @@ footer {
         padding: 20px;
     }
 
-    /**/
     a:hover {
         color: black;
     }
@@ -195,18 +204,15 @@ footer {
 
     .combo-button:first-child {
         margin-right: 10px;
- 
+
 
     }
 
-    /**/
     .basis-elements {
         display: flex;
         flex-direction: column;
         height: 100%;
     }
-
-
 
     .main {
         width: 90%;
@@ -249,8 +255,104 @@ footer {
 
     footer {
         text-align: center;
+        width: 99%;
     }
 
 }
 
-@media (max-width: 460px) {}
+@media screen and (max-width: 480px) {
+    .header-nav-center {
+        width: 98%;
+        justify-content: center;
+
+    }
+
+    .fitness-icon {
+        align-self: flex-start;
+        text-align: center;
+        flex-direction: row;
+        font-size: 12px;
+        width: 50%;
+
+    }
+
+    .header-nav {
+        flex-direction: column;
+        position: fixed;
+    }
+
+    .nav-header {
+        width: 480px;
+        flex-direction: column;
+        margin: 33px;
+    }
+
+    .button_login {
+        font-size: 10px;
+        border-width: 3px;
+        border-radius: 3px;
+        margin-right: 20px;
+    }
+
+    .combo-button {
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        justify-self: flex-end;
+        width: 50%;
+    }
+
+    .left-menu-pannel {
+        width: 90%;
+        padding-right: 10px;
+        margin-top: 30px;
+    }
+
+    #burger,
+    [for=burger] {
+        display: none;
+    }
+
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 25px;
+        font-size: 20px;
+        text-align: center;
+        right: 0px;
+        top: 10px;
+        color: white;
+        background-color: rgba(178, 34, 34, 0.682);
+        ;
+    }
+
+    [for=burger]::before {
+        content: "\2261";
+
+    }
+
+    /*hide menu pannel:*/
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-top: 30px;
+        background: rgba(178, 34, 34, 0.682);
+        width: 100%;
+        user-select: none;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*these element are neighbourhoods and this will show us content burger*/
+    #burger:checked+label+nav {
+        display: none;
+    }
+
+    burger:checked+[for=burger]::before {
+        content: "\2261";
+    }
+}

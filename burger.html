@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 1px solid #000;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        #burger,
+        [for=burger] {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 480px) {
+            .header-nav-center{
+                flex-direction: row;
+            }
+
+            [for=burger] {
+                display: block;
+                position: fixed;
+                width: 30px;
+                text-align: center;
+                right: 20px;
+                top: 10px;
+            }
+            [for=burger]::before{
+               content: "\2261";
+            }
+
+            /*hide menu pannel:*/
+            nav {
+                display: none;
+                position: fixed;
+                top:0;
+                margin-top: 30px;
+                background: rgba(178, 34, 34, 0.682);
+                width: 100%;
+                user-select: none;
+            }
+            nav ul{
+                margin: 0;
+                padding: 0;
+            }
+
+            /*these element are neighbourhoods and this will show us content burger*/
+            #burger:checked+label+h1+nav {
+                display: block;
+            }
+            burger:checked +[for=burger]::before{
+               content: "\2261";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+        <nav>
+            <ul>
+                <li><a href="#">Lorem.</a></li>
+                <li><a href="#">Officiis.</a></li>
+                <li><a href="#">Ex.</a></li>
+                <li><a href="#">Commodi!</a></li>
+                <li><a href="#">Laboriosam.</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Заголовок</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa odit incidunt aspernatur illum,
+                repudiandae fugit, consectetur natus eum similique deserunt sequi. Ducimus excepturi facilis obcaecati a
+                fuga officiis dolore deserunt nesciunt vero eaque architecto iure quam, pariatur debitis rem officia
+                doloremque eum libero earum, iusto adipisci. Illo ex inventore tempora consequuntur dolor quia sunt
+                voluptatum alias id distinctio, asperiores iure. Quaerat consequuntur cumque expedita iusto accusamus
+                earum odit? Cupiditate perspiciatis assumenda cum deserunt. Harum iure quaerat repellat libero a aut
+                officiis cum quasi quis fuga? Quam modi, unde, quo, autem obcaecati molestias ipsa ullam asperiores iure
+                ab non quisquam.</p>
+            <p>Ipsam dolores illum nulla totam impedit voluptates architecto similique cupiditate ipsum ullam eaque
+                deleniti debitis sed deserunt vel necessitatibus earum quia, assumenda aliquam veniam. Molestias iusto,
+                placeat qui enim non ipsam inventore, tenetur dolorum culpa aliquid dignissimos voluptas aut vero natus
+                excepturi numquam. Quasi quisquam repudiandae suscipit cumque rem. Expedita accusamus voluptatem totam
+                id in optio culpa esse odit quasi, ea fuga aspernatur amet vitae eos fugiat natus saepe iure, ab
+                delectus reprehenderit. Nam sunt odit aliquam quas exercitationem ex, odio laudantium dicta aut. Dolorum
+                voluptate id aspernatur similique fuga mollitia libero sapiente dolor eius quae, nostrum sed non
+                doloribus!</p>
+            <p>Natus assumenda repudiandae saepe, dolorem esse sit totam eius et dolor accusamus? Neque eius officia
+                nisi aliquid error accusantium, reiciendis nihil molestias commodi totam! Tempore pariatur porro
+                exercitationem ducimus libero doloremque aspernatur iusto ullam, officiis aut amet molestiae culpa
+                deserunt esse, adipisci maxime dolorum. Vitae, laboriosam quaerat! Consectetur recusandae veniam omnis.
+                Delectus, nam quibusdam qui quam consectetur vitae minus quo deleniti atque laborum perspiciatis
+                corrupti aperiam praesentium beatae aliquam dicta non facilis ut, exercitationem eaque modi. Cumque
+                dicta voluptas itaque maxime pariatur! Ullam vero, voluptatem beatae quia officia illum similique sunt,
+                doloribus expedita adipisci aut dolore ut id quaerat voluptas!</p>
+            <p>Sed, accusamus! Quasi porro at illo molestias quidem quisquam ratione facilis quo? Ipsam aliquid
+                asperiores, provident reiciendis maxime atque debitis dolores molestias quae ullam dignissimos beatae
+                sequi vel. Quaerat omnis consequatur, minima quibusdam eum distinctio recusandae cum odio provident
+                cupiditate pariatur aperiam laborum inventore alias molestias dicta maiores accusamus! Quas doloribus
+                libero id vitae temporibus impedit alias, dignissimos magni nostrum corporis, qui sapiente sint,
+                voluptas obcaecati reiciendis vel saepe. Libero laboriosam alias facere. Reprehenderit a esse laboriosam
+                unde ipsum, incidunt dolor rerum, eaque ipsa rem, doloribus ab libero recusandae. Dolorum, voluptate
+                animi voluptates libero adipisci provident amet recusandae aliquam iste.</p>
+            <p>Temporibus, maiores soluta voluptate, aperiam delectus sint vel optio iusto quas natus dolor voluptatem
+                amet labore nam quos minima numquam officia dolorem. Quos pariatur id, tenetur eaque quis eos excepturi
+                corrupti accusamus quae sunt facilis natus cum, praesentium similique iure sit dolore nemo. Voluptas
+                repellendus molestias vero aperiam blanditiis soluta dolorum sapiente. Ad corporis sit praesentium
+                possimus, odio recusandae quam atque aut commodi corrupti unde adipisci, perspiciatis id eos tempora?
+                Dolor, voluptate nisi? Rerum, ipsam repellendus, architecto pariatur officia magnam ea minima modi et
+                cum odio! Dolore non beatae quasi doloribus nobis est ut sit magnam tempore, cum repellendus. Hic.</p>
+            <p>Consequatur quibusdam beatae numquam illo repudiandae reprehenderit fuga dolorem laborum magnam sapiente
+                veniam voluptas facilis aspernatur nihil corporis, consectetur reiciendis adipisci, perferendis aperiam
+                officia distinctio! Atque, consequuntur nobis neque quisquam quis repudiandae rerum quod delectus
+                consequatur, vitae enim debitis necessitatibus inventore libero adipisci sit ipsam, rem earum hic
+                impedit ad accusamus voluptas incidunt deleniti! Sint adipisci hic ullam, dicta distinctio id velit
+                voluptates, porro cum perspiciatis quos minus exercitationem a soluta error labore, explicabo inventore
+                blanditiis veritatis vitae amet. Suscipit illo animi praesentium, laudantium facere perferendis
+                deserunt, doloremque iure similique ea repudiandae officia odio ipsum fugiat porro consequatur pariatur
+                nostrum?</p>
+            <p>Nemo repudiandae laudantium pariatur commodi quod vero maiores ratione delectus magni corporis nihil
+                tempora iure, dolorem fuga eaque dicta modi labore veritatis? Ullam eligendi, necessitatibus deleniti
+                accusantium temporibus illum nisi tempore maiores rem praesentium molestias molestiae eveniet asperiores
+                commodi unde ea. Natus hic, deserunt tempore repellat harum minus laboriosam reiciendis soluta, vel,
+                amet omnis? Deleniti laudantium tempora quam excepturi saepe! Aut impedit earum nemo maiores sit
+                similique nesciunt repellendus soluta aperiam, consequuntur animi, incidunt necessitatibus libero
+                quisquam eum quasi! Dignissimos in culpa vitae! At, recusandae similique a quaerat, laudantium dolore
+                sunt veritatis expedita non dolores ullam optio illum nobis porro.</p>
+            <p>Fugiat, veritatis deserunt numquam harum quod assumenda, sunt suscipit quidem officia debitis odit
+                similique eligendi nulla maiores adipisci. Alias ducimus ipsam a animi tempora, voluptatibus at iste
+                expedita reiciendis delectus consequatur, dolor recusandae veritatis, esse dolores amet similique totam
+                est? Eveniet facere blanditiis atque reiciendis tempore cum eligendi voluptates. Placeat ab soluta unde,
+                aut repellat rerum doloribus molestiae asperiores ad totam fugit ullam. Quibusdam necessitatibus ipsum
+                suscipit consectetur corporis, repellat nobis perferendis vero accusamus quia nulla! Quis corporis
+                obcaecati in facere vero officia quibusdam nemo. Neque, quod iusto perferendis nihil error commodi
+                fugiat perspiciatis nesciunt. Hic ab sapiente debitis ut?</p>
+           
+        </section>
+    </div>
+</body>
+
+</html>
