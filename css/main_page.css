@@ -93,7 +93,13 @@ a:hover {
 
 .left-menu-pannel {
     width: 15%;
-    padding-right: 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.gif-loading{
+    text-align: center;
 }
 
 .load-img {
@@ -224,6 +230,18 @@ input#burger {
     .left-menu-pannel {
         width: 90%;
         padding-right: 10px;
+        font-size: 20px;
+        text-align: left;
+        flex-direction: row;
+        
+    }
+    .load-img{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-self: center;
+        padding: 20px;
+        
     }
 
     .article_header2 {
@@ -307,10 +325,13 @@ input#burger {
         padding-right: 10px;
         margin-top: 30px;
     }
+    .icon {
+        
+    }
 
     #burger,
     [for=burger] {
-        display: none;
+        display: flex;
     }
 
     [for=burger] {
@@ -323,7 +344,7 @@ input#burger {
         top: 10px;
         color: white;
         background-color: rgba(178, 34, 34, 0.682);
-        ;
+ 
     }
 
     [for=burger]::before {
@@ -332,7 +353,12 @@ input#burger {
     }
 
     /*hide menu pannel:*/
-    nav {
+    
+    burger:checked+[for=burger]::before {
+        content: "\2261";
+    }
+
+    .nav-header {
         display: none;
         position: fixed;
         top: 0;
@@ -340,6 +366,7 @@ input#burger {
         background: rgba(178, 34, 34, 0.682);
         width: 100%;
         user-select: none;
+
     }
 
     nav ul {
@@ -349,10 +376,10 @@ input#burger {
 
     /*these element are neighbourhoods and this will show us content burger*/
     #burger:checked+label+nav {
-        display: none;
+        display: flex;
+        
+       
     }
+    
 
-    burger:checked+[for=burger]::before {
-        content: "\2261";
-    }
 }

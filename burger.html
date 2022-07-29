@@ -49,6 +49,7 @@
                 background: rgba(178, 34, 34, 0.682);
                 width: 100%;
                 user-select: none;
+                visibility: hidden;
             }
             nav ul{
                 margin: 0;
@@ -58,6 +59,7 @@
             /*these element are neighbourhoods and this will show us content burger*/
             #burger:checked+label+h1+nav {
                 display: block;
+                visibility: visible;
             }
             burger:checked +[for=burger]::before{
                content: "\2261";
