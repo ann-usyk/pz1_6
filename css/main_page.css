@@ -98,7 +98,8 @@ a:hover {
     flex-direction: column;
     text-align: justify;
 }
-.gif-loading{
+
+.gif-loading {
     text-align: center;
 }
 
@@ -125,8 +126,7 @@ a:hover {
     text-align: justify;
     padding: 10px;
     margin: 0px;
-    font-size: 18px;
-    line-height: 30px;
+
 }
 
 .main-img {
@@ -233,15 +233,16 @@ input#burger {
         font-size: 20px;
         text-align: left;
         flex-direction: row;
-        
+
     }
-    .load-img{
+
+    .load-img {
         width: 30px;
         height: 30px;
         display: flex;
         align-self: center;
         padding: 20px;
-        
+
     }
 
     .article_header2 {
@@ -325,9 +326,6 @@ input#burger {
         padding-right: 10px;
         margin-top: 30px;
     }
-    .icon {
-        
-    }
 
     #burger,
     [for=burger] {
@@ -344,7 +342,7 @@ input#burger {
         top: 10px;
         color: white;
         background-color: rgba(178, 34, 34, 0.682);
- 
+
     }
 
     [for=burger]::before {
@@ -353,7 +351,7 @@ input#burger {
     }
 
     /*hide menu pannel:*/
-    
+
     burger:checked+[for=burger]::before {
         content: "\2261";
     }
@@ -377,9 +375,99 @@ input#burger {
     /*these element are neighbourhoods and this will show us content burger*/
     #burger:checked+label+nav {
         display: flex;
-        
-       
+
+
     }
-    
+}
+
+/*PILATESS*/
+.main-float {
+    width: 100%;
+    display: block;
+}
+
+.pilatess-about {
+    width: 70%;
+    position: reative;
+    float: left;
+}
+
+section>h1 {
+    display: block;
+    color: black;
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+    margin-left: 20px;
 
 }
+
+.left-text-float {
+
+    position: relative;
+    width: 99%;
+    font-size: 24px;
+    text-align: justify;
+    padding: 10px;
+    margin: 0px 0px;
+
+}
+
+.img-pilatess-studio {
+    width: 99%;
+    padding: 10px;
+
+    position: relative;
+}
+
+.float-right-pannel {
+    position: relative;
+    width: 29%;
+    float: right;
+    height: 100%;
+    background-color: rgba(165, 42, 42, 0.189);
+}
+
+.trainers-float {
+    position: relative;
+    width: 30%;
+}
+
+.float-right-pannel>h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.float-right-pannel>h2>p {
+    display: block;
+    width: 28%;
+    text-align: justify;
+}
+
+.text-right-pannel {
+    text-align: justify;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.img-right-pannel {
+    display: block;
+    width: 90%;
+    padding: 20px;
+}
+
+.float-footer {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 100%;
+
+}
+
+/*YOGA*/
+/*ZUMBA*/
+/*ABOUT*/
+/*PRICE*/
