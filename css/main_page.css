@@ -379,57 +379,52 @@ input#burger {
 
     }
 }
-
-/*PILATESS*/
 .main-float {
     width: 100%;
-    display: block;
+     
 }
 
 .pilatess-about {
     width: 70%;
-    position: reative;
-    float: left;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(165, 42, 42, 0.189);
 }
 
-section>h1 {
+.header-pilatess-about {
     display: block;
     color: black;
     width: 70%;
     text-align: left;
-    padding: 10px;
-    margin-left: 20px;
+   padding: 20px;
 
 }
 
 .left-text-float {
-
+    
     position: relative;
-    width: 99%;
+    width: 98%;
     font-size: 24px;
     text-align: justify;
-    padding: 10px;
-    margin: 0px 0px;
-
+    padding-left: 10px;
+    
 }
 
 .img-pilatess-studio {
-    width: 99%;
-    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 
     position: relative;
 }
 
 .float-right-pannel {
-    position: relative;
-    width: 29%;
     float: right;
-    height: 100%;
-    background-color: rgba(165, 42, 42, 0.189);
+    width: 30%;
+    height: 1658px;
+   
 }
 
 .trainers-float {
-    position: relative;
     width: 30%;
 }
 
@@ -460,12 +455,13 @@ section>h1 {
 }
 
 .float-footer {
-    position: relative;
-    display: block;
-    height: 20px;
-    width: 100%;
-
+        text-align: center;
+        height: 10%;
 }
+
+
+
+/*PILATESS*/
 
 /*YOGA*/
 /*ZUMBA*/
