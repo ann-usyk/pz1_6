@@ -1,0 +1,84 @@
+
+.main-float {
+    width: 100%;
+     
+}
+
+.pilatess-about {
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(165, 42, 42, 0.189);
+}
+
+.header-pilatess-about {
+    display: block;
+    color: black;
+    width: 70%;
+    text-align: left;
+   padding: 20px;
+
+}
+
+.left-text-float {
+    
+    position: relative;
+    width: 98%;
+    font-size: 24px;
+    text-align: justify;
+    padding-left: 10px;
+    
+}
+
+.img-pilatess-studio {
+    width: 100%;
+    margin-bottom: 10px;
+
+    position: relative;
+}
+
+.float-right-pannel {
+    float: right;
+    width: 30%;
+    height: 1658px;
+   
+}
+
+.trainers-float {
+    width: 30%;
+}
+
+.float-right-pannel>h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.float-right-pannel>h2>p {
+    display: block;
+    width: 28%;
+    text-align: justify;
+}
+
+.text-right-pannel {
+    text-align: justify;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.img-right-pannel {
+    display: block;
+    width: 90%;
+    padding: 20px;
+}
+
+.float-footer {
+        text-align: center;
+        height: 10%;
+}
+
+
+
+

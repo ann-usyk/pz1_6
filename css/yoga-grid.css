@@ -1,0 +1,43 @@
+.grid-area {
+    display: grid;
+    grid-template-areas:
+        "el1 el1"
+        "el2 el3"
+        "el2 el3"
+        "el4 el5";
+        grid-gap: 5px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 950px;
+}
+
+.element-1 {
+    grid-area: el1;
+    background-image:url(./img/yoga-carpet.jpg);
+}
+.element-1>img{
+    width: 100%;
+}
+.element-2 {
+    grid-area: el2;
+}
+
+.element-3 {
+    grid-area: el3;
+}
+
+.element-4 {
+    grid-area: el4;
+    
+}
+.element-4>img{
+    display: block;
+    width: 100%;
+}
+
+.element-5 {
+    grid-area: el5;
+}
+.element-5>img{
+    display: block;
+    width:100%;
+}
