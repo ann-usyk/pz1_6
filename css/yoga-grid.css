@@ -23,13 +23,15 @@
 .element-2 {
     grid-area: el2;
     margin-left: 10px;
-    
+
 }
-.element-2_h2{
+
+.element-2_h2 {
     text-align: center;
     color: rgb(165, 42, 42);
-    
+
 }
+
 .blockquote-6 {
     border-left: 6px solid rgba(165, 42, 42, 0.189);
     font-size: 24px;
@@ -38,6 +40,7 @@
     padding: 16px 24px;
     position: relative;
 }
+
 .blockquote-6:before {
     content: "";
     position: absolute;
@@ -48,19 +51,21 @@
     width: 6px;
     margin-top: -1em;
 }
+
 .blockquote-6:after {
     content: "”";
     position: absolute;
     top: 50%;
     left: -20px;
-    color:  rgb(165, 42, 42);
+    color: rgb(165, 42, 42);
     font-size: 50px;
     font-family: Times, sans-serif;
     font-weight: bold;
-    line-height: 30px;   
+    line-height: 30px;
 }
+
 .blockquote-6 cite {
-    color:  rgb(165, 42, 42);
+    color: rgb(165, 42, 42);
     font-size: 15px;
     padding-top: 10px;
     display: block;
@@ -78,9 +83,11 @@
 .element-3_header2 {
     margin: 5px;
 }
-.element-3_text{
+
+.element-3_text {
     margin: 20px;
 }
+
 .element-4 {
     grid-area: el4;
 

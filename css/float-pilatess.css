@@ -1,12 +1,11 @@
-
 .main-float {
     width: 100%;
-     
+
 }
 
 .pilatess-about {
     width: 70%;
-    position: relative;
+   
     display: inline-block;
     background-color: rgba(165, 42, 42, 0.189);
 }
@@ -16,32 +15,31 @@
     color: black;
     width: 70%;
     text-align: left;
-   padding: 20px;
+    padding: 20px;
 
 }
 
 .left-text-float {
-    
+
     position: relative;
     width: 98%;
     font-size: 24px;
     text-align: justify;
     padding-left: 10px;
-    
+
 }
 
 .img-pilatess-studio {
     width: 98%;
     margin-bottom: 10px;
-
     position: relative;
 }
 
 .float-right-pannel {
     float: right;
     width: 30%;
-    height:100%;
-   
+    height: 100%;
+
 }
 
 .trainers-float {
@@ -73,15 +71,110 @@
     width: 90%;
     padding: 20px;
 }
-.float-right-pannel_hr{
+
+.float-right-pannel_hr {
     border: 10px solid rgba(165, 42, 42, 0.189);
+    margin: 0%;
 }
 
 .float-footer {
-        text-align: center;
-        height: 10%;
+    text-align: center;
+    margin: 0%;
+    width: 100%;
+    background-color:rgba(165, 42, 42, 0.189);
+}
+.float-footer_text{
+    margin: 0%;
 }
 
 
+@media (max-width:768px){
+    
+    .left-text-float {
+        width: 96%;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0%;
+    }
+    .img-right-pannel {
+        display: block;
+        width: 90%;
+        padding: 0px;
+        margin: 0%;
+        margin-right: 0%;
+    }
+}
 
+@media (max-width:480px){
+    
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 25px;
+        font-size: 20px;
+        text-align: center;
+        right: 5px;
+     
 
+    }
+    .left-text-float {
+        position:static;
+        width: 96%;
+        font-size: 24px;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 0px;
+    
+    }
+    
+    .img-pilatess-studio {
+        width: 98%;
+        margin-bottom: 10px;
+        position: static;
+        display:inline-block;
+    }
+   
+    /**/
+    .header-pilatess-about {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0%;
+        text-align: center;
+    }
+
+    .pilatess-about {
+        width: 100%;
+        position: static;
+    }
+    .float-right-pannel {
+        float: none;
+        width: 100%;
+        background-color: rgba(165, 42, 42, 0.189);
+    
+    }
+    .text-right-pannel {
+        text-align: justify;
+        padding: 10px;
+        margin: 0;
+        font-size: 18px;
+    }
+    .float-right-pannel_hr {
+        border: 3px solid rgba(165, 42, 42, 0.189);
+
+    }
+    .float-right-pannel>h2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 0%;
+    }
+  
+    .img-right-pannel {
+        display: block;
+        width: 90%;
+        padding: 18px;
+        margin: 0%;
+        margin-right: 0%;
+    }
+}
