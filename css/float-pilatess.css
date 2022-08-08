@@ -31,7 +31,7 @@
 }
 
 .img-pilatess-studio {
-    width: 100%;
+    width: 98%;
     margin-bottom: 10px;
 
     position: relative;
@@ -40,7 +40,7 @@
 .float-right-pannel {
     float: right;
     width: 30%;
-    height: 1658px;
+    height:100%;
    
 }
 
@@ -72,6 +72,9 @@
     display: block;
     width: 90%;
     padding: 20px;
+}
+.float-right-pannel_hr{
+    border: 10px solid rgba(165, 42, 42, 0.189);
 }
 
 .float-footer {
