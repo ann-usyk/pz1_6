@@ -95,7 +95,8 @@
 
 .element-4>img {
     display: block;
-    height: 900px;
+    width: 100%;
+
     object-fit: cover;
 }
 
@@ -105,7 +106,82 @@
 
 .element-5>img {
     display: block;
-    height: 900px;
+    width: 100%;
     justify-content: center;
     object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .grid-area {
+        display: grid;
+        grid-template-areas:
+            "el1 el1"
+            "el3 el3"
+            "el2 el2"
+            "el4 el5"
+        ;
+        grid-gap: 5px;
+        grid-row: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .element-4>img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .element-5>img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:480px) {
+    .element-1>img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .element-3_header2 {
+        text-align: center;
+    }
+
+    .blockquote-6 {
+        position: static;
+    }
+
+    .blockquote-6:after {
+        content: "";
+        position: static;
+        top: 50%;
+
+    }
+
+    .blockquote-6:before {
+        position: static;
+    }
+
+    .blockquote-6 cite {
+        position: static;
+    }
+
+    .element-4>img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .element-5>img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        object-fit: cover;
+    }
 }

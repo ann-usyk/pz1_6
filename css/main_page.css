@@ -14,7 +14,7 @@ body {
 }
 
 .header-nav-center {
-    width: 96%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -26,7 +26,7 @@ body {
 .fitness-icon {
     display: flex;
     flex-direction: row;
-    width: 15%;
+    width: 20%;
     padding: 20px;
 }
 
@@ -72,7 +72,7 @@ a:hover {
 .combo-button {
     display: flex;
     justify-content: space-around;
-    width: 15%;
+    width: 20%;
 }
 
 .combo-button:first-child {
